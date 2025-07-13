@@ -1,0 +1,49 @@
+/* Estilo geral para a página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+h1 {
+    color: #0056b3;
+}
+
+/* Container para o input e o botão */
+.input-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#task-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px; /* Cantos arredondados só na esquerda */
+    width: 300px;
+}
+
+#add-task-btn {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0; /* Cantos arredondados só na direita */
+}
+
+#add-task-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo da lista de tarefas */
+#task-list {
+    list-style-type: none; /* Remove os pontinhos da lista */
+    padding: 0;
+    width: 380px;
+}
