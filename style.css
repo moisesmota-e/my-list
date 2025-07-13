@@ -47,3 +47,23 @@ h1 {
     padding: 0;
     width: 380px;
 }
+
+/* Estilo para um item da lista concluído */
+.task-list-item.completed {
+    text-decoration: line-through; /* Adiciona uma linha no meio do texto */
+    color: #888; /* Deixa o texto cinza */
+    cursor: default;
+}
+
+/* Estilo para um item da lista normal */
+.task-list-item {
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.task-list-item:hover {
+    background-color: #f0f0f0;
+}

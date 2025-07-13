@@ -12,6 +12,7 @@ function addTask() {
         // Cria um novo elemento <li> (item da lista)
         const listItem = document.createElement('li');
         listItem.textContent = taskText; // Define o texto do item
+        listItem.classList.add('task-list-item');
 
         // Adiciona o novo item à lista <ul>
         taskList.appendChild(listItem);
@@ -32,5 +33,14 @@ addTaskBtn.addEventListener('click', addTask);
 taskInput.addEventListener('keypress', function(event) {
     if (event.key === 'Enter') {
         addTask();
+    }
+});
+
+// 4. Escutador para marcar tarefas como concluídas (Delegação de Eventos)
+taskList.addEventListener('click', function(event) {
+    // Verifica se o elemento clicado foi um item da lista (LI com a classe certa)
+    if (event.target && event.target.matches('li.task-list-item')) {
+        // Adiciona ou remove a classe 'completed'
+        event.target.classList.toggle('completed');
     }
 });
