@@ -57,6 +57,9 @@ h1 {
 
 /* Estilo para um item da lista normal */
 .task-list-item {
+    display: flex; /* Adicionado */
+    justify-content: space-between; /* Adicionado */
+    align-items: center; /* Adicionado */
     background: #fff;
     border-bottom: 1px solid #ddd;
     padding: 15px;
@@ -66,4 +69,17 @@ h1 {
 
 .task-list-item:hover {
     background-color: #f0f0f0;
+}
+
+.delete-btn {
+    background-color: #dc3545; /* Vermelho */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #c82333; /* Vermelho mais escuro */
 }
